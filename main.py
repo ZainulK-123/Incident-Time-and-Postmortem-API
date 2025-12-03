@@ -12,7 +12,7 @@ app = FastAPI(
 # Configure CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, replace with specific origins
+    allow_origins=["https://incident-time-and-postmortem-api-1.onrender.com"],  # In production, replace with specific origins
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
