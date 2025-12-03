@@ -3,4 +3,5 @@ python-dotenv == 1.2.1
 pymongo == 4.15.5
 uvicorn == 0.38.0
 pydantic == 2.12.5
+certifi==2025.11.12
 
