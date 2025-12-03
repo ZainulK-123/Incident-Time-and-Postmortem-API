@@ -3,8 +3,12 @@ from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import certifi
 import os
+from dotenv import load_dotenv
 
-uri = os.getenv("uri")
+# Load environment variables from .env file
+load_dotenv()
+
+uri = os.getenv("MONGODB_URI")
 
 # Create a new client and connect to the server with proper SSL configuration
 client = MongoClient(
