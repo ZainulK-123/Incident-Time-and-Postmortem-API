@@ -2,8 +2,9 @@
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import certifi
+import os
 
-uri = "mongodb+srv://zk863054_db_user1:08xFKui3RDNscJyT@cluster0.dcs5shz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+uri = os.getenv("uri")
 
 # Create a new client and connect to the server with proper SSL configuration
 client = MongoClient(
